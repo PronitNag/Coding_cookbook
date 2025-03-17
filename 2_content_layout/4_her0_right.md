@@ -1,1 +1,45 @@
+```css
+* {
+    box-sizing: border-box
+}
 
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#hero-1 {
+    background-image: url("../images/lizard.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#hero-1 h1 {
+    font-size: 120px; 
+    position: absolute;
+    left: 20%;
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero - Left (flex + position)</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="hero-1">
+            <h1>Sup?</h1>
+        </div>
+    </body>
+</html>
+```
