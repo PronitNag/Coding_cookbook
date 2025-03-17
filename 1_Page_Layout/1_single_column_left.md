@@ -59,6 +59,8 @@ body {
 #navbar-column,
 .center-column {
     width: 500px;
+    padding: 0px 24px;
+}
 ```
 
 ```html
