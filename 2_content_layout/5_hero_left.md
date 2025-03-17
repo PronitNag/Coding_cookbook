@@ -1,1 +1,85 @@
+```css
+* {
+    box-sizing: border-box
+}
 
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#hero-2 {
+    background-image: url("../images/lonely-ocean.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+/* 
+    Remember, this approach is a bit tedious,
+    since you have to manually position each
+    individual HTML element.
+
+    Unless you really NEED to position each
+    HTML element in different parts of the hero,
+    it is generally much easier to use a
+    hero-content container to group the hero
+    content together, and then move them as
+    a group with the position properties.
+
+    Check out the other Coding Cookbook 
+    recipe pages for hero layouts for 
+    examples of this!
+*/
+
+#hero-2 h2 {
+    font-size: 72px;
+    position: absolute;
+    right: 20%;
+    bottom: 50%;
+}
+
+#hero-2 h4 {
+    font-size: 24px;
+    position: absolute;
+    right: 20%;
+    bottom: 47%;
+}
+
+#hero-2 a {
+    font-size: 14px;
+    display: inline-block;
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+    padding: 24px;
+    position: absolute;
+    right: 20%;
+    bottom: 41%;
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero - Right (flex column + position)</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="hero-2">
+            <h2>Feeling lost?</h2>
+            <h4>Don't worry, so are we</h4>
+            <a href="#">REQUEST ASSISTANCE</a>
+        </div>
+    </body>
+</html>
+```
